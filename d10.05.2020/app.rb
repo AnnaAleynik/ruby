@@ -25,7 +25,7 @@ get "/todos/new" do
 end
 
 get "/todos/:id/edit" do
-	results = conn.exec("SELECT * FROM todos WHERE id='#{params['id']}'")[0]
+	@results = conn.exec("SELECT * FROM todos WHERE id='#{params['id']}'")[0]
 
   erb :edit
 end
