@@ -69,7 +69,7 @@ post "/todos/:id" do
 	if params["custom_method"] == "PUT"
 
 		todo = ToDo.new(params['id'], params['title'])
-		todo.update
+		id = todo.update
 		
 		redirect to("/todos/#{id}")
 	end

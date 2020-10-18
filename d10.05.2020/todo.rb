@@ -25,10 +25,9 @@ class ToDo
     hash.map do |entry|
       entry = ToDo.new(entry['id'], entry['title'])
       # entry = ToDo.new(entry)
-
     end
-
   end
+
 
   def self.all
     results = @@conn.exec("SELECT * FROM todos")
@@ -78,12 +77,9 @@ class ToDo
   end
 
   def update
-    res = conn.exec("UPDATE todos SET title='#{@title}' WHERE id=#{@id} RETURNING id")
+    res = @@conn.exec("UPDATE todos SET title='#{@title}' WHERE id=#{@id} RETURNING id")
     id = @id
-    # id = res
-
-
-    
+    # id = res    
   end
 
 
