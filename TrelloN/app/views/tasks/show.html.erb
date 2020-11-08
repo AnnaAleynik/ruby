@@ -1,0 +1,7 @@
+<h4>Task:</h4>
+<p><%= @task.title %></p>
+<hr>
+<p><%= @task.description%> <br></p>
+<%= link_to 'Edit', edit_card_task_path(params[:card_id], @task) %>
+<%= link_to 'Destroy', card_task_path(params[:card_id], @task), method: :delete, data: { confirm: 'Are you sure?'} %>
+<%= link_to 'Back', card_path(params[:card_id]) %>

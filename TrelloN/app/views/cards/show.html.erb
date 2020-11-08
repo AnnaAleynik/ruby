@@ -1,0 +1,17 @@
+<p>
+  <strong>Title:</strong>
+  <%= @card.title %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %> |
+<%= link_to 'New task', new_card_task_path(@card) %>
+
+<ul>
+  <%- @card.tasks.each do |task|%>
+  <li>
+    <%= task.title%> <%= link_to 'Show', card_task_path(@card, task) %>
+  </li>
+  <%- end %>
+</ul>
+

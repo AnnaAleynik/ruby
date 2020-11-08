@@ -40,12 +40,15 @@ end
 
 
 get '/todos/:id' do
-  "Hello World #{params["id"]}"
+	@id = params["id"]
+  "Hello World #{@id}"
 
   # @results = conn.exec("SELECT * FROM todos WHERE id='#{params['id']}'")[0]
 
-	@results = ToDo.where({"id"=>params['id']})[0]
-  erb :show
+	@results = ToDo.where({"id"=>@id})
+  # erb :show
+  erb :test
+
 end
 
 
@@ -58,7 +61,7 @@ post '/todos' do
 
     redirect to('/todos')
 	else 
-		todo = ToDo.new(params['id'], params['title'])
+		todo = ToDo.new(0, params['title'])
 		id = todo.save
 		redirect to("/todos/#{id}")
 	end

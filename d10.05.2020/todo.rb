@@ -10,7 +10,6 @@ class ToDo
 
 
   def initialize(id, title)
-        # @results = conn.exec( "SELECT * FROM todos")
     @id = id
     @title = title
   end
@@ -55,9 +54,12 @@ class ToDo
       title_str = "title='#{params["title"]}'"
     end
         
-    res = @@conn.exec("#{method_str}#{id_str} #{title_str};")
+    res = @@conn.exec("#{method_str}#{id_str}#{title_str};")
+
+    # res = "asasaasas#{method_str}#{id_str}#{title_str};"
+
     self.mapping(res)
-    # res = ToDo.new(res['id'], res['title'])
+    res = ToDo.new(res['id'], res['title'])[0]
   # @results = conn.exec("SELECT * FROM todos WHERE id='#{params['id']}'")[0]
 
   end
@@ -65,9 +67,9 @@ class ToDo
 
   def save
     res = @@conn.exec("INSERT INTO todos (title) VALUES ('#{@title}') RETURNING id")
-    puts res.class.name
+    
 
-    id = res[0]
+    id = res
     
   end
 
