@@ -1,3 +1,4 @@
+
 AllCops:
   NewCops: enable
   Exclude:
@@ -6,11 +7,16 @@ AllCops:
     - 'tmp/**/*'
     - '.git/**/*'
     - 'bin/*'
+    - 'node_modules/**/*'
 
   TargetRubyVersion: 2.7
 
 Style/FrozenStringLiteralComment:
   Enabled: false
+# without freezing strings
 
 Layout/LineLength:
-  Max: 100
+  Max: 120
+
+Style/Documentation:
+  Enabled: false
