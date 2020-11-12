@@ -1,6 +1,6 @@
 class CardsController < ApplicationController
   def index
-    @cards = Card.actual
+    @cards = Card.all
   end
 
   def show

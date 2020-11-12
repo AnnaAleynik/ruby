@@ -5709,3 +5709,279 @@ Processing by CardsController#index as HTML
 Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.3ms | Allocations: 4281)
 
 
+Started GET "/cards" for ::1 at 2020-11-12 20:15:04 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/application
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE (created_at > '2020-11-11')[0m
+  ↳ app/views/cards/index.html.slim:3
+  Rendered cards/index.html.slim within layouts/application (Duration: 5.0ms | Allocations: 2867)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 8.8ms | ActiveRecord: 0.5ms | Allocations: 7489)
+
+
+Started GET "/cards/new" for ::1 at 2020-11-12 20:15:08 +0300
+Processing by CardsController#new as HTML
+  Rendering cards/new.html.slim within layouts/application
+  Rendered cards/_form.html.slim (Duration: 3.6ms | Allocations: 555)
+  Rendered cards/new.html.slim within layouts/application (Duration: 4.2ms | Allocations: 636)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 4088)
+
+
+Started POST "/cards" for ::1 at 2020-11-12 20:15:12 +0300
+Processing by CardsController#create as HTML
+  Parameters: {"authenticity_token"=>"8jC1Sy3ZsCR6xRD7tQqafaGuBzBpD2TPCEJ8n2m/rTC26l2FvyB6gmqjKpyLYv3VchNSxw+BRhO0k8hqc3Umzw==", "card"=>{"title"=>"test"}, "commit"=>"Create Card"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cards_controller.rb:20:in `create'
+  [1m[36mCard Create (0.7ms)[0m  [1m[32mINSERT INTO "cards" ("title", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["title", "test"], ["created_at", "2020-11-12 17:15:12.324492"], ["updated_at", "2020-11-12 17:15:12.324492"]]
+  ↳ app/controllers/cards_controller.rb:20:in `create'
+  [1m[35m (23.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cards_controller.rb:20:in `create'
+Redirected to http://localhost:3000/cards/7
+Completed 302 Found in 33ms (ActiveRecord: 24.5ms | Allocations: 3123)
+
+
+Started GET "/cards/7" for ::1 at 2020-11-12 20:15:12 +0300
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:7:in `show'
+  Rendering cards/show.html.slim within layouts/application
+  Rendered cards/show.html.slim within layouts/application (Duration: 13.9ms | Allocations: 6313)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms | Allocations: 7472)
+
+
+  
+ActionView::Template::Error (undefined method `before_safe' for #<Class:0x00007eff88232f38>
+Did you mean?  before_save):
+     8: |  | 
+     9: = link_to 'New task', new_card_task_path(@card)
+    10: ul
+    11:   - @card.tasks.each do |task|
+    12:     li
+    13:       = task.title
+    14:       = link_to 'Show', card_task_path(@card, task)
+  
+app/models/task.rb:5:in `<class:Task>'
+app/models/task.rb:1:in `<main>'
+app/views/cards/show.html.slim:11
+Started GET "/cards/7" for ::1 at 2020-11-12 20:16:55 +0300
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:7:in `show'
+  Rendering cards/show.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."card_id" = $1[0m  [["card_id", 7]]
+  ↳ app/views/cards/show.html.slim:11
+  Rendered cards/show.html.slim within layouts/application (Duration: 5.4ms | Allocations: 2389)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 8.5ms | ActiveRecord: 5.1ms | Allocations: 9641)
+
+
+Started GET "/cards/7" for ::1 at 2020-11-12 20:17:19 +0300
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:7:in `show'
+  Rendering cards/show.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."card_id" = $1[0m  [["card_id", 7]]
+  ↳ app/views/cards/show.html.slim:11
+  Rendered cards/show.html.slim within layouts/application (Duration: 4.9ms | Allocations: 2415)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 8.1ms | ActiveRecord: 3.9ms | Allocations: 9618)
+
+
+Started GET "/cards" for ::1 at 2020-11-12 20:17:21 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/application
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE (created_at > '2020-11-11')[0m
+  ↳ app/views/cards/index.html.slim:3
+  Rendered cards/index.html.slim within layouts/application (Duration: 1.7ms | Allocations: 881)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.3ms | Allocations: 4385)
+
+
+Started GET "/cards/new" for ::1 at 2020-11-12 20:17:23 +0300
+Processing by CardsController#new as HTML
+  Rendering cards/new.html.slim within layouts/application
+  Rendered cards/_form.html.slim (Duration: 1.5ms | Allocations: 554)
+  Rendered cards/new.html.slim within layouts/application (Duration: 1.8ms | Allocations: 635)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 4083)
+
+
+Started GET "/cards" for ::1 at 2020-11-12 20:17:27 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/application
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE (created_at > '2020-11-11')[0m
+  ↳ app/views/cards/index.html.slim:3
+  Rendered cards/index.html.slim within layouts/application (Duration: 3.2ms | Allocations: 877)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.4ms | Allocations: 4383)
+
+
+Started GET "/cards/6" for ::1 at 2020-11-12 20:17:32 +0300
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:7:in `show'
+  Rendering cards/show.html.slim within layouts/application
+  [1m[36mTask Load (0.3ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."card_id" = $1[0m  [["card_id", 6]]
+  ↳ app/views/cards/show.html.slim:11
+  Rendered cards/show.html.slim within layouts/application (Duration: 11.6ms | Allocations: 4322)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 15.0ms | ActiveRecord: 2.3ms | Allocations: 8210)
+
+
+Started GET "/cards/6/tasks/new" for ::1 at 2020-11-12 20:17:35 +0300
+Processing by TasksController#new as HTML
+  Parameters: {"card_id"=>"6"}
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `new'
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (Duration: 1.3ms | Allocations: 758)
+  Rendered tasks/new.html.slim within layouts/application (Duration: 1.6ms | Allocations: 845)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.3ms | Allocations: 4961)
+
+
+Started POST "/cards/6/tasks" for ::1 at 2020-11-12 20:17:40 +0300
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"oj1cxy8GLFQuwHTWULIP51G8k6hJt/ZAcmuj2UMMUcp9H7FUSo1z0DfZ0Yb4QYRj7Tvss5n/6ZJh0kq5rp/oBw==", "task"=>{"title"=>"tet", "description"=>"dd"}, "commit"=>"Create Task", "card_id"=>"6"}
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:21:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:23:in `create'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:23:in `create'
+  [1m[36mTask Create (0.8ms)[0m  [1m[32mINSERT INTO "tasks" ("title", "created_at", "updated_at", "description", "card_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "TET"], ["created_at", "2020-11-12 17:17:40.395746"], ["updated_at", "2020-11-12 17:17:40.395746"], ["description", "dd"], ["card_id", 6]]
+  ↳ app/controllers/tasks_controller.rb:23:in `create'
+  [1m[35m (28.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:23:in `create'
+Redirected to http://localhost:3000/cards/6/tasks/17
+Completed 302 Found in 48ms (ActiveRecord: 30.7ms | Allocations: 4886)
+
+
+Started GET "/cards/6/tasks/17" for ::1 at 2020-11-12 20:17:40 +0300
+Processing by TasksController#show as HTML
+  Parameters: {"card_id"=>"6", "id"=>"17"}
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 17], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 0.4ms | Allocations: 129)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.4ms | Allocations: 4235)
+
+
+Started GET "/cards/6" for ::1 at 2020-11-12 20:20:57 +0300
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCard Load (0.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:7:in `show'
+  Rendering cards/show.html.slim within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."card_id" = $1[0m  [["card_id", 6]]
+  ↳ app/views/cards/show.html.slim:11
+  Rendered cards/show.html.slim within layouts/application (Duration: 11.9ms | Allocations: 5831)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 13.2ms | ActiveRecord: 4.1ms | Allocations: 13010)
+
+
+Started GET "/cards" for ::1 at 2020-11-12 20:20:59 +0300
+Processing by CardsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 3559)
+
+
+  
+NoMethodError (undefined method `actual' for #<Class:0x0000564dea97e8f0>):
+  
+app/controllers/cards_controller.rb:3:in `index'
+Started GET "/cards" for ::1 at 2020-11-12 20:22:45 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/application
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:3
+  Rendered cards/index.html.slim within layouts/application (Duration: 6.8ms | Allocations: 3219)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 9.6ms | ActiveRecord: 2.5ms | Allocations: 7685)
+
+
+Started DELETE "/cards/7" for ::1 at 2020-11-12 20:22:51 +0300
+Processing by CardsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iVKww72Lh962FnlRwDuZ6PT9V+zv4xfPpN/7QF985anyyjoxQFyMRVze4VKtlRmrQ5vfAZpwvDeV08dsYT2Low==", "id"=>"7"}
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:38:in `destroy'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/cards_controller.rb:39:in `destroy'
+  [1m[36mTask Load (0.4ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."card_id" = $1[0m  [["card_id", 7]]
+  ↳ app/controllers/cards_controller.rb:39:in `destroy'
+  [1m[36mCard Destroy (0.7ms)[0m  [1m[31mDELETE FROM "cards" WHERE "cards"."id" = $1[0m  [["id", 7]]
+  ↳ app/controllers/cards_controller.rb:39:in `destroy'
+  [1m[35m (14.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/cards_controller.rb:39:in `destroy'
+Redirected to http://localhost:3000/cards
+Completed 302 Found in 35ms (ActiveRecord: 17.8ms | Allocations: 5688)
+
+
+Started GET "/cards" for ::1 at 2020-11-12 20:22:52 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/application
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:3
+  Rendered cards/index.html.slim within layouts/application (Duration: 5.9ms | Allocations: 976)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.9ms | Allocations: 4435)
+
+
+Started GET "/cards/6" for ::1 at 2020-11-12 20:22:53 +0300
+Processing by CardsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mCard Load (0.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:7:in `show'
+  Rendering cards/show.html.slim within layouts/application
+  [1m[36mTask Load (0.2ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."card_id" = $1[0m  [["card_id", 6]]
+  ↳ app/views/cards/show.html.slim:11
+  Rendered cards/show.html.slim within layouts/application (Duration: 6.9ms | Allocations: 4390)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 9.7ms | ActiveRecord: 1.3ms | Allocations: 8276)
+
+
+Started GET "/cards/6/tasks/new" for ::1 at 2020-11-12 20:22:54 +0300
+Processing by TasksController#new as HTML
+  Parameters: {"card_id"=>"6"}
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:11:in `new'
+  Rendering tasks/new.html.slim within layouts/application
+  Rendered tasks/_form.html.slim (Duration: 2.8ms | Allocations: 805)
+  Rendered tasks/new.html.slim within layouts/application (Duration: 3.3ms | Allocations: 892)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.0ms | ActiveRecord: 0.5ms | Allocations: 5055)
+
+
+Started POST "/cards/6/tasks" for ::1 at 2020-11-12 20:22:59 +0300
+Processing by TasksController#create as HTML
+  Parameters: {"authenticity_token"=>"jrBWqvhRXZwj3saRvVVAOGz6B1AIDAoz7iGPcA0wXwlRkrs5ndoCGDrHY8EVpsu80H14S9hEFeH9mGYQ4KPmxA==", "task"=>{"title"=>"tete", "description"=>""}, "commit"=>"Create Task", "card_id"=>"6"}
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:21:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/tasks_controller.rb:23:in `create'
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:23:in `create'
+  [1m[36mTask Create (0.8ms)[0m  [1m[32mINSERT INTO "tasks" ("title", "created_at", "updated_at", "description", "card_id") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["title", "TETE"], ["created_at", "2020-11-12 17:22:59.367535"], ["updated_at", "2020-11-12 17:22:59.367535"], ["description", ""], ["card_id", 6]]
+  ↳ app/controllers/tasks_controller.rb:23:in `create'
+  [1m[35m (812.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/tasks_controller.rb:23:in `create'
+Redirected to http://localhost:3000/cards/6/tasks/18
+Completed 302 Found in 992ms (ActiveRecord: 814.4ms | Allocations: 4874)
+
+
+Started GET "/cards/6/tasks/18" for ::1 at 2020-11-12 20:23:00 +0300
+Processing by TasksController#show as HTML
+  Parameters: {"card_id"=>"6", "id"=>"18"}
+  [1m[36mTask Load (0.7ms)[0m  [1m[34mSELECT "tasks".* FROM "tasks" WHERE "tasks"."id" = $1 LIMIT $2[0m  [["id", 18], ["LIMIT", 1]]
+  ↳ app/controllers/tasks_controller.rb:7:in `show'
+  Rendering tasks/show.html.slim within layouts/application
+  Rendered tasks/show.html.slim within layouts/application (Duration: 0.8ms | Allocations: 129)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 9.1ms | ActiveRecord: 0.7ms | Allocations: 4230)
+
+
