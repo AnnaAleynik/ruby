@@ -8,20 +8,21 @@ class TasksController < ApplicationController
   end
 
   def new
+    @card = Card.find(params[:card_id])
     @task = Task.new
   end
 
   def edit
+    @card = Card.find(params[:card_id])
     @task = Task.find(params[:id])
   end
 
   def create
-    param = task_params 
-    param[:card_id] = (params[:card_id])
-    @task = Task.new(param)
+    @card = Card.find(params[:card_id])
+    @task = Task.new(task_params.merge(card_id: params[:card_id]))
     if @task.save
-      redirect_to card_task_path(params["card_id"], @task)
-    else 
+      redirect_to card_task_path(params['card_id'], @task)
+    else
       render 'new'
     end
 
@@ -48,7 +49,8 @@ class TasksController < ApplicationController
   end
 
   private
-    def task_params
-      params.require(:task).permit(:title, :description)
-    end
+
+  def task_params
+    params.require(:task).permit(:title, :description)
+  end
 end

@@ -1,7 +1,6 @@
 class CardsController < ApplicationController
-
   def index
-    @cards = Card.all
+    @cards = Card.actual
   end
 
   def show
@@ -17,10 +16,10 @@ class CardsController < ApplicationController
   end
 
   def create
-  	@card = Card.new(card_params)
+    @card = Card.new(card_params)
     if @card.save
       redirect_to @card
-    else 
+    else
       render 'new'
     end
   end
@@ -43,8 +42,8 @@ class CardsController < ApplicationController
   end
 
   private
-    def card_params
-      params.require(:card).permit(:title)
-    end
 
+  def card_params
+    params.require(:card).permit(:title)
+  end
 end
