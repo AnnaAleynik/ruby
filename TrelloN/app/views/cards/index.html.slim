@@ -1,0 +1,10 @@
+h2
+  | Your cards
+- @cards.each do |card|
+  h3
+    = card.title
+  = link_to 'Show', card_path(card)
+  = link_to 'Edit', edit_card_path(card)
+  = link_to 'Destroy', card_path(card), method: :delete, data: { confirm: 'Are you sure?'}
+  hr
+= link_to 'New card', new_card_path
