@@ -1,0 +1,36 @@
+  [1m[35m (371.0ms)[0m  [1m[35mDROP DATABASE IF EXISTS "TrelloN_test"[0m
+  [1m[35m (2800.7ms)[0m  [1m[35mCREATE DATABASE "TrelloN_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "cards" CASCADE[0m
+  [1m[35m (222.9ms)[0m  [1m[35mCREATE TABLE "cards" ("id" bigserial primary key, "title" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "tasks" CASCADE[0m
+  [1m[35m (874.5ms)[0m  [1m[35mCREATE TABLE "tasks" ("id" bigserial primary key, "title" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, "description" text, "card_id" bigint NOT NULL)[0m
+  [1m[35m (86.2ms)[0m  [1m[35mCREATE  INDEX  "index_tasks_on_card_id" ON "tasks"  ("card_id")[0m
+  [1m[35m (25.7ms)[0m  [1m[35mALTER TABLE "tasks" ADD CONSTRAINT "fk_rails_dd4c2fba16"
+FOREIGN KEY ("card_id")
+  REFERENCES "cards" ("id")
+[0m
+  [1m[35m (115.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (55.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20201107230210)[0m
+  [1m[35m (16.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20201107162720),
+(20201107195903),
+(20201107225230);
+
+[0m
+  [1m[35m (114.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", "2020-11-16 13:07:12.157200"], ["updated_at", "2020-11-16 13:07:12.157200"]]
+  [1m[35m (23.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "c83691dd47758b2f5ea5ecc28b2eb931863a24dd"], ["created_at", "2020-11-16 13:07:12.191335"], ["updated_at", "2020-11-16 13:07:12.191335"]]
+  [1m[35m (20.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (8080.0ms)[0m  [1m[35mCREATE DATABASE "TrelloN_test-2" ENCODING = 'unicode'[0m
+  [1m[35m (8083.2ms)[0m  [1m[35mCREATE DATABASE "TrelloN_test-0" ENCODING = 'unicode'[0m
+  [1m[35m (8082.4ms)[0m  [1m[35mCREATE DATABASE "TrelloN_test-1" ENCODING = 'unicode'[0m
+  [1m[35m (8080.3ms)[0m  [1m[35mCREATE DATABASE "TrelloN_test-3" ENCODING = 'unicode'[0m

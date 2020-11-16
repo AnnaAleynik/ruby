@@ -1,6 +1,9 @@
-p
-  strong
-    | Title:
+/ .message.message--notice = notice
+/ .message.message--alert = alert
+
+
+strong
+  | Title:
   = @card.title
 = link_to 'Edit', edit_card_path(@card)
 |  | 

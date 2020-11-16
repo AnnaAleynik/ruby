@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root to: 'home#show'  
+
   resources :cards do
     resources :tasks
   end

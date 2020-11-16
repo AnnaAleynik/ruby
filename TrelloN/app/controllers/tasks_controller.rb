@@ -1,4 +1,6 @@
 class TasksController < ApplicationController
+  # layout
+
   def index
     @tasks = Task.actual
   end

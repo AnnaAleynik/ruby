@@ -1,10 +1,15 @@
-h2
-  | Your cards
-- @cards.each do |card|
-  h3
-    = card.title
-  = link_to 'Show', card_path(card)
-  = link_to 'Edit', edit_card_path(card)
-  = link_to 'Destroy', card_path(card), method: :delete, data: { confirm: 'Are you sure?'}
-  hr
-= link_to 'New card', new_card_path
+/ notice
+
+h2 Your cards
+ul.cards-list
+  -@cards.each do |card|
+    li.cards-list__item
+      .cards-list__header
+        = link_to card.title, card_path(card)
+      .cards-list__icons
+        = link_to edit_card_path(card), class: 'cards-list__icon' do
+          = image_tag 'edit.svg'
+        = link_to card_path(card), method: :delete, data: { confirm: 'Are you sure?'}, class: 'cards-list__icon' do
+          = image_tag 'delete.svg'
+
+= link_to 'New card', new_card_path, class: 'button'
