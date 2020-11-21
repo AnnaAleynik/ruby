@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title
+      | TrelloN
+    = csrf_meta_tags
+    = csp_meta_tag
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
+  body
+    =render 'header'
+    =render 'card'
+    main.content
+      = yield
+    
+      = link_to card_path(params[:card_id]), class: 'back' do
+        =image_tag 'back.svg'
+    
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'

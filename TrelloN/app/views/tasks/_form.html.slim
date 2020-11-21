@@ -1,4 +1,4 @@
-= form_with model: [@card, @task], local: true do |form|
+= form_with model: [@card, @task], class: 'form-new', local: true do |form|
   - if @task.errors.any?
     #error_explanation
       h2
@@ -8,13 +8,10 @@
         - @task.errors.full_messages.each do |msg|
           li
             = msg
-  p
-    = form.label :title
-    br
-    = form.text_field :title
-  p
-    = form.label :description
-    br
-    = form.text_area :description
-  p
+            
+  .form-new__field
+    = form.text_field :title, placeholder: "Title"
+  .form-new__field
+    = form.text_area :description, placeholder: "Description"
+  .form-new__button
     = form.submit

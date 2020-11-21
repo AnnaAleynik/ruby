@@ -1,3 +1,44 @@
-// Place all the styles related to the Tasks controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 -10px;
+
+  &__item {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid $gray--light;
+    min-width: 100px;
+    max-width: 500px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.task-card {
+  border: $olive solid 3px;
+  max-width: 700px;
+  padding: 4px;
+
+  &__header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+  }
+  
+  &__title {
+    font-size: 20px;
+  }
+
+  &__description {
+    margin: 4px;
+    font-size: 14px;
+  }
+  
+}

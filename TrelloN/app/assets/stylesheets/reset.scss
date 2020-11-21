@@ -11,10 +11,10 @@ body {
   }
   
   a {
-    color: $light--blue;
+    color: $carbon;
     
     &:hover {
-      color: lighten($light--blue, 10%);
+      color: lighten($carbon, 10%);
       text-decoration: none;
     }
   }

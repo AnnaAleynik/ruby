@@ -2,16 +2,21 @@
 / .message.message--alert = alert
 
 
-strong
-  | Title:
-  = @card.title
-= link_to 'Edit', edit_card_path(@card)
-|  | 
-= link_to 'Back', cards_path
-|  | 
-= link_to 'New task', new_card_task_path(@card)
-ul
+h2 
+  | Card:  #{@card.title}
+hr
+
+.cards-item
+  = link_to edit_card_path(@card), class: 'cards-list__icon' do
+    = image_tag 'edit.svg'
+
+  = link_to cards_path, class: 'cards-list__icon' do
+    = image_tag 'back.svg'
+    
+  = link_to new_card_task_path(@card), class: 'cards-list__icon' do
+    = image_tag 'new.svg'
+
+ul.tasks-list
   - @card.tasks.each do |task|
-    li
-      = task.title
-      = link_to 'Show', card_task_path(@card, task)
+    li.tasks-list__item
+      = link_to task.title, card_task_path(@card, task)

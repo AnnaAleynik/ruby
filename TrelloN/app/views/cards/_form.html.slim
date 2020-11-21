@@ -1,16 +1,14 @@
-= form_with model: @card, local: true do |form|
-  - if @card.errors.any?
-    #error_explanation
-      h2
-        = pluralize(@card.errors.count, "error")
-        |  prohibited this card from being saved: 
-      ul
-        - @card.errors.full_messages.each do |msg|
-          li
-            = msg
-  p
-    = form.label :title
-    br
-    = form.text_field :title
-  p
-    = form.submit
+= form_with model: @card, class: 'form-new', local: true do |form| 
+    - if @card.errors.any?
+      #error_explanation
+        h2
+          = pluralize(@card.errors.count, "error")
+          |  prohibited this card from being saved: 
+        ul
+          - @card.errors.full_messages.each do |msg|
+            li
+              = msg
+    .form-new__field
+      = form.text_field :title, placeholder: "Title"
+    .form-new__button
+      = form.submit

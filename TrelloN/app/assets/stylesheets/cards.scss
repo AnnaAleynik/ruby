@@ -9,7 +9,7 @@
     list-style: none;
     padding: 10px;
     margin: 20px;
-    border: 1px solid $gray--light;
+    border: 1px solid $carbon;
     border-radius: 10%;
     min-width: 100px;
   }
@@ -26,5 +26,28 @@
       width: 15px;
     }
   }
+}
 
+.cards-item {
+  &__item {
+    position: relative;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid $carbon;
+    border-radius: 10%;
+    min-width: 100px;
+  }
+
+  &__icons {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  &__icon {
+    margin: 5px;
+    img {
+      width: 20px;
+    }
+  }
 }

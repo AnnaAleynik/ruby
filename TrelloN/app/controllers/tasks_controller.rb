@@ -1,11 +1,12 @@
 class TasksController < ApplicationController
-  # layout
-
-  def index
-    @tasks = Task.actual
-  end
+  layout 'tasks'
+  
+  # def index
+  #   @tasks = Task.actual
+  # end
 
   def show
+    @card = Card.find(params[:card_id])
     @task = Task.find(params[:id])
   end
 
