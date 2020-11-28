@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+set -e
+bin/rubocop --display-style-guide
+
+bin/scss-lint app/assets/stylesheets
+bin/slim-lint app/views/**/*.slim

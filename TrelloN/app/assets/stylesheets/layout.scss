@@ -1,20 +1,19 @@
 .header {
+  background-color: $gray;
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background-color: $gray;
 
   &__menu {
     display: flex;
   }
-   
+
   &__link {
-    margin: 0 10px;
-    text-decoration: none;
-    padding: 3px 4px;
     background: $sand;
     border-radius: 10%;
-  
+    margin: 0 10px;
+    padding: 3px 4px;
+    text-decoration: none;
 
     &--main {
       box-shadow: 5px 2px 2px $carbon;
@@ -25,5 +24,3 @@
 .content {
   padding: 30px, 20px;
 }
-
-

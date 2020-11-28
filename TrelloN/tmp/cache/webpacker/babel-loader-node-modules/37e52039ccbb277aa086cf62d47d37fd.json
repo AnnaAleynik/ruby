@@ -1,0 +1,1 @@
+{"ast":null,"code":"console.log('h');","map":{"version":3,"sources":["/home/anna/programming/studying/ruby/ruby-course/TrelloN/app/javascript/components/magic.js"],"names":["console","log"],"mappings":"AAAAA,OAAO,CAACC,GAAR,CAAY,GAAZ","sourcesContent":["console.log('h');"]},"metadata":{},"sourceType":"module"}

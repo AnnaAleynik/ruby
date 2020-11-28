@@ -11687,3 +11687,201 @@ Processing by CardsController#edit as HTML
 Completed 200 OK in 309ms (Views: 303.9ms | ActiveRecord: 0.7ms | Allocations: 15242)
 
 
+Started GET "/cards/1/edit" for ::1 at 2020-11-29 00:04:16 +0300
+  [1m[35m (22.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCard Load (24.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:17:in `edit'
+  Rendering cards/edit.html.slim within layouts/cards
+  Rendered cards/_form.html.slim (Duration: 35.9ms | Allocations: 5463)
+  Rendered cards/edit.html.slim within layouts/cards (Duration: 566.8ms | Allocations: 33259)
+Completed 500 Internal Server Error in 735ms (ActiveRecord: 76.3ms | Allocations: 39471)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$olive".
+        on line 2:21 of app/assets/stylesheets/buttons.scss
+>>   background-color: $olive;
+
+   --------------------^
+):
+  
+app/assets/stylesheets/buttons.scss:2
+Started GET "/cards/1/edit" for ::1 at 2020-11-29 00:04:21 +0300
+Processing by CardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCard Load (0.8ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:17:in `edit'
+  Rendering cards/edit.html.slim within layouts/cards
+  Rendered cards/_form.html.slim (Duration: 2.5ms | Allocations: 418)
+  Rendered cards/edit.html.slim within layouts/cards (Duration: 24.0ms | Allocations: 5633)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.8ms | Allocations: 6650)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$olive".
+        on line 2:21 of app/assets/stylesheets/buttons.scss
+>>   background-color: $olive;
+
+   --------------------^
+):
+  
+app/assets/stylesheets/buttons.scss:2
+Started GET "/cards/1/edit" for ::1 at 2020-11-29 00:04:22 +0300
+Processing by CardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCard Load (1.0ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:17:in `edit'
+  Rendering cards/edit.html.slim within layouts/cards
+  Rendered cards/_form.html.slim (Duration: 1.6ms | Allocations: 418)
+  Rendered cards/edit.html.slim within layouts/cards (Duration: 14.0ms | Allocations: 4598)
+  Rendered application/_header.html.slim (Duration: 111.5ms | Allocations: 2430)
+[Webpacker] Compiling...
+Started GET "/cards/1/edit" for ::1 at 2020-11-29 00:04:24 +0300
+Processing by CardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:17:in `edit'
+  Rendering cards/edit.html.slim within layouts/cards
+  Rendered cards/_form.html.slim (Duration: 0.9ms | Allocations: 423)
+  Rendered cards/edit.html.slim within layouts/cards (Duration: 2.1ms | Allocations: 1044)
+  Rendered application/_header.html.slim (Duration: 0.1ms | Allocations: 61)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: 76ee732fe7a15196ca73
+Version: webpack 4.44.2
+Time: 2833ms
+Built at: 29.11.2020 00:04:30
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-edddaeba969b09b64692.js    125 KiB  application  [emitted] [immutable]  application
+js/application-edddaeba969b09b64692.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-edddaeba969b09b64692.js js/application-edddaeba969b09b64692.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 777 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 8462ms (Views: 8456.9ms | ActiveRecord: 1.0ms | Allocations: 29987)
+
+
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: 76ee732fe7a15196ca73
+Version: webpack 4.44.2
+Time: 2829ms
+Built at: 29.11.2020 00:04:30
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-edddaeba969b09b64692.js    125 KiB  application  [emitted] [immutable]  application
+js/application-edddaeba969b09b64692.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-edddaeba969b09b64692.js js/application-edddaeba969b09b64692.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 777 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 6755ms (Views: 6753.0ms | ActiveRecord: 0.5ms | Allocations: 8542)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:04:35 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (1.0ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:5
+  Rendered cards/index.html.slim within layouts/cards (Duration: 80.8ms | Allocations: 6551)
+  Rendered application/_header.html.slim (Duration: 0.3ms | Allocations: 64)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 96ms (Views: 91.8ms | ActiveRecord: 1.0ms | Allocations: 10462)
+
+
+Started GET "/" for ::1 at 2020-11-29 00:05:11 +0300
+Processing by HomeController#show as HTML
+  Rendering home/show.html.slim within layouts/cards
+  Rendered home/show.html.slim within layouts/cards (Duration: 45.9ms | Allocations: 2811)
+  Rendered application/_header.html.slim (Duration: 0.7ms | Allocations: 78)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.0ms | Allocations: 7177)
+
+
+Started GET "/" for ::1 at 2020-11-29 00:05:13 +0300
+Processing by HomeController#show as HTML
+  Rendering home/show.html.slim within layouts/cards
+  Rendered home/show.html.slim within layouts/cards (Duration: 0.1ms | Allocations: 4)
+  Rendered application/_header.html.slim (Duration: 0.3ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 3855)
+
+
+Started GET "/" for ::1 at 2020-11-29 00:06:34 +0300
+Processing by HomeController#show as HTML
+  Rendering home/show.html.slim within layouts/cards
+  Rendered home/show.html.slim within layouts/cards (Duration: 12.0ms | Allocations: 2811)
+  Rendered application/_header.html.slim (Duration: 3.6ms | Allocations: 2433)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.0ms | Allocations: 13186)
+
+
+Started GET "/" for ::1 at 2020-11-29 00:06:38 +0300
+Processing by HomeController#show as HTML
+  Rendering home/show.html.slim within layouts/cards
+  Rendered home/show.html.slim within layouts/cards (Duration: 0.2ms | Allocations: 4)
+  Rendered application/_header.html.slim (Duration: 0.3ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 3849)
+
+
+Started GET "/" for ::1 at 2020-11-29 00:07:16 +0300
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#show as HTML
+  Rendering home/show.html.slim within layouts/cards
+  Rendered home/show.html.slim within layouts/cards (Duration: 15.8ms | Allocations: 10232)
+  Rendered application/_header.html.slim (Duration: 2.5ms | Allocations: 2461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.0ms | Allocations: 24256)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:07:20 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:5
+  Rendered cards/index.html.slim within layouts/cards (Duration: 18.0ms | Allocations: 9045)
+  Rendered application/_header.html.slim (Duration: 0.1ms | Allocations: 64)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 18.9ms | ActiveRecord: 4.1ms | Allocations: 14574)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:08:22 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.5ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:5
+  Rendered cards/index.html.slim within layouts/cards (Duration: 14.5ms | Allocations: 6536)
+  Rendered application/_header.html.slim (Duration: 2.9ms | Allocations: 2424)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 28.3ms | ActiveRecord: 0.5ms | Allocations: 16856)
+
+
+Started GET "/" for ::1 at 2020-11-29 00:08:25 +0300
+Processing by HomeController#show as HTML
+  Rendering home/show.html.slim within layouts/cards
+  Rendered home/show.html.slim within layouts/cards (Duration: 10.8ms | Allocations: 2809)
+  Rendered application/_header.html.slim (Duration: 0.5ms | Allocations: 77)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 25.6ms | ActiveRecord: 0.0ms | Allocations: 7223)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:08:27 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (1.2ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:5
+  Rendered cards/index.html.slim within layouts/cards (Duration: 14.0ms | Allocations: 2941)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 64)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 1.2ms | Allocations: 6727)
+
+

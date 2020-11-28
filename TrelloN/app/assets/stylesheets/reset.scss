@@ -1,47 +1,50 @@
 body {
-    background-color: $white;
-    color: #333;
-    margin: 0;
-    font-family: verdana, arial, helvetica, sans-serif;
+  background-color: $white;
+  color: $black--light;
+  font-family: verdana, arial, helvetica, sans-serif;
+  margin: 0;
+}
+
+body,
+p,
+ol,
+ul,
+td {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+a {
+  color: $carbon;
+
+  &:hover {
+    color: lighten($carbon, 10%);
+    text-decoration: none;
   }
-  
-  body, p, ol, ul, td {
-    font-size: 13px;
-    line-height: 18px;
+}
+
+.field,
+.actions {
+  margin-bottom: 10px;
+}
+
+.message {
+  &:not(:empty) {
+    border: 1px solid;
+    padding: 5px;
   }
-  
-  a {
-    color: $carbon;
-    
-    &:hover {
-      color: lighten($carbon, 10%);
-      text-decoration: none;
-    }
+
+  &--notice {
+    background-color: lighten($green, 50%);
+    color: $green;
   }
-  
-  div.field,
-  div.actions {
-    margin-bottom: 10px;
+
+  &--alert {
+    background-color: lighten($red, 50%);
+    color: $red;
   }
-  
-  
-  .message {
-    &:not(:empty) {
-      padding: 5px;
-      border: 1px solid;
-    }
-  
-    &--notice {
-      color: $green;
-      background-color: lighten($green, 50%);
-    }
-    
-    &--alert {
-      color: $red;
-      background-color: lighten($red, 50%);
-    }
-  }
-  
-  label {
-    display: block;
-  }
+}
+
+label {
+  display: block;
+}

@@ -15,4 +15,4 @@ html
       = link_to card_path(params[:card_id]), class: 'back' do
         =image_tag 'back.svg'
 
-    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-eval': 'false'

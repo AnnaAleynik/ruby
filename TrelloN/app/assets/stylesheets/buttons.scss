@@ -1,20 +1,20 @@
 .button {
-	background-color: $olive;
-	border-radius: 2px;
-	display: inline-block;
-	cursor: pointer;
-	color: $white;
-	font-weight: bold;
-	padding: 5px 8px;
-	text-decoration: none;
-	text-shadow: 0px 1px 0px $carbon;
-	border: none;
-	outline: none;
+  background-color: $olive;
+  border: none;
+  border-radius: 2px;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  outline: none;
+  padding: 5px 8px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 $carbon;
 
   &:hover {
+    animation: skyblue-to-pink 1s ease infinite;
     background-color: $sand;
-		color: $white;
-		animation: skyblue-to-pink 1s ease infinite;
+    color: $white;
   }
 
   &:active {
@@ -23,26 +23,26 @@
   }
 }
 
-@include animation-mixin(skyblue-to-pink, $sand,$olive);
-
+@include animation-mixin(skyblue-to-pink, $sand, $olive);
 
 .group-buttons {
-	display: flex;
+  display: flex;
 
-	&__but {
-		margin: 5px;
-		img {
-			width: 30px;
-		}
-		text-decoration: none;
-	}
+  &__but {
+    margin: 5px;
+    text-decoration: none;
+
+    img {
+      width: 30px;
+    }
+  }
 }
-
 
 .back {
   margin: 5px;
+  text-decoration: none;
+
   img {
     width: 35px;
   }
-  text-decoration: none;
 }

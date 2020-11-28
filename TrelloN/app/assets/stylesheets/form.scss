@@ -1,27 +1,24 @@
 .form-new {
   &__field {
+    margin: 5px;
+
     input {
       max-width: 500px;
     }
-    margin: 5px;
   }
 
   &__area {
+    margin: 5px;
+
     input {
       max-width: 500px;
     }
-    margin: 5px;
   }
-  
+
   &__button {
-    submit {
-      color: $sand;
-    }
     margin: 5px;
   }
 }
-
-
 
 // @media (min-width: 800px) {
 //   .field {
