@@ -11633,3 +11633,57 @@ Processing by CardsController#edit as HTML
 Completed 200 OK in 33ms (Views: 27.6ms | ActiveRecord: 1.0ms | Allocations: 19307)
 
 
+Started GET "/cards/1/edit" for ::1 at 2020-11-28 12:33:11 +0300
+  [1m[35m (22.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCard Load (88.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:17:in `edit'
+  Rendering cards/edit.html.slim within layouts/cards
+  Rendered cards/_form.html.slim (Duration: 69.9ms | Allocations: 5458)
+  Rendered cards/edit.html.slim within layouts/cards (Duration: 597.7ms | Allocations: 29243)
+Completed 500 Internal Server Error in 916ms (ActiveRecord: 129.0ms | Allocations: 35460)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$olive".
+        on line 2:20 of app/assets/stylesheets/buttons.scss
+>> 	background-color: $olive;
+
+   -------------------^
+):
+  
+app/assets/stylesheets/buttons.scss:2
+Started GET "/cards/1/edit" for ::1 at 2020-11-28 12:33:15 +0300
+Processing by CardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:17:in `edit'
+  Rendering cards/edit.html.slim within layouts/cards
+  Rendered cards/_form.html.slim (Duration: 3.7ms | Allocations: 437)
+  Rendered cards/edit.html.slim within layouts/cards (Duration: 22.5ms | Allocations: 5649)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 0.9ms | Allocations: 6701)
+
+
+  
+ActionView::Template::Error (Error: Undefined variable: "$olive".
+        on line 2:20 of app/assets/stylesheets/buttons.scss
+>> 	background-color: $olive;
+
+   -------------------^
+):
+  
+app/assets/stylesheets/buttons.scss:2
+Started GET "/cards/1/edit" for ::1 at 2020-11-28 12:33:16 +0300
+Processing by CardsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards" WHERE "cards"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/cards_controller.rb:17:in `edit'
+  Rendering cards/edit.html.slim within layouts/cards
+  Rendered cards/_form.html.slim (Duration: 1.6ms | Allocations: 418)
+  Rendered cards/edit.html.slim within layouts/cards (Duration: 150.1ms | Allocations: 4611)
+  Rendered application/_header.html.slim (Duration: 41.7ms | Allocations: 2434)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 309ms (Views: 303.9ms | ActiveRecord: 0.7ms | Allocations: 15242)
+
+

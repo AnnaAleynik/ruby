@@ -9,7 +9,7 @@ ul.cards-list
       .cards-list__icons
         = link_to edit_card_path(card), class: 'cards-list__icon' do
           = image_tag 'edit.svg'
-        = link_to card_path(card), method: :delete, data: { confirm: 'Are you sure?'}, class: 'cards-list__icon' do
+        = link_to card_path(card), method: :delete, data: { confirm: 'Are you sure?' }, class: 'cards-list__icon' do
           = image_tag 'delete.svg'
 
 = link_to 'New card', new_card_path, class: 'button'

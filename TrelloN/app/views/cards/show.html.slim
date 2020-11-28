@@ -1,8 +1,7 @@
 / .message.message--notice = notice
 / .message.message--alert = alert
 
-
-h2 
+h2
   | Card:  #{@card.title}
 hr
 
@@ -12,7 +11,7 @@ hr
 
   = link_to cards_path, class: 'cards-list__icon' do
     = image_tag 'back.svg'
-    
+
   = link_to new_card_task_path(@card), class: 'cards-list__icon' do
     = image_tag 'new.svg'
 

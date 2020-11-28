@@ -8,7 +8,7 @@ html
     = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload'
   body
     =render 'header'
-    
+
     main.content
       = yield
     = javascript_pack_tag 'application', 'data-turbolinks-track': 'reload'

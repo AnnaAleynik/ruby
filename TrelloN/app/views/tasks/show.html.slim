@@ -1,16 +1,15 @@
-.task-card 
-  .task-card__header 
+.task-card
+  .task-card__header
     .task-card__title
-      | Task: #{@task.title}
+      | Task: #{ @task.title }
 
     .group-buttons
-      .group-buttons__but    
+      .group-buttons__but
         = link_to edit_card_task_path(params[:card_id], @task) do
           =image_tag 'edit.svg'
-      .group-buttons__but   
-        = link_to card_task_path(params[:card_id], @task), method: :delete, data: { confirm: 'Are you sure?'} do
+      .group-buttons__but
+        = link_to card_task_path(params[:card_id], @task), method: :delete, data: { confirm: 'Are you sure?' } do
           =image_tag 'delete.svg'
 
-  
   .task-card__description
     = @task.description

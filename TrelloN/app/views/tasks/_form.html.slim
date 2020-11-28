@@ -2,16 +2,16 @@
   - if @task.errors.any?
     #error_explanation
       h2
-        = pluralize(@task.errors.count, "error")
-        |  prohibited this task from being saved: 
+        = pluralize(@task.errors.count, 'error')
+        |  prohibited this task from being saved:
       ul
         - @task.errors.full_messages.each do |msg|
           li
             = msg
-            
+
   .form-new__field
-    = form.text_field :title, placeholder: "Title"
+    = form.text_field :title, placeholder: 'Title'
   .form-new__field
-    = form.text_area :description, placeholder: "Description"
+    = form.text_area :description, placeholder: 'Description'
   .form-new__button
     = form.submit
