@@ -11885,3 +11885,408 @@ Processing by CardsController#index as HTML
 Completed 200 OK in 26ms (Views: 21.5ms | ActiveRecord: 1.2ms | Allocations: 6727)
 
 
+Started GET "/cards" for ::1 at 2020-11-29 00:19:46 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (1.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 14.2ms | Allocations: 6826)
+  Rendered application/_header.html.slim (Duration: 4.7ms | Allocations: 2424)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: c7b287525f19384ec609
+Version: webpack 4.44.2
+Time: 742ms
+Built at: 29.11.2020 00:19:49
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-20fe4290ea1c72c76485.js    125 KiB  application  [emitted] [immutable]  application
+js/application-20fe4290ea1c72c76485.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-20fe4290ea1c72c76485.js js/application-20fe4290ea1c72c76485.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2318ms (Views: 2316.0ms | ActiveRecord: 1.1ms | Allocations: 18374)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:19:51 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 4.9ms | Allocations: 2937)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 6713)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:19:54 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 5.7ms | Allocations: 2942)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.4ms | ActiveRecord: 0.3ms | Allocations: 6727)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:19:54 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 6.8ms | Allocations: 2947)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.4ms | Allocations: 6754)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:19:56 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 7.9ms | Allocations: 2944)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.4ms | Allocations: 6716)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:19:58 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.3ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 7.6ms | Allocations: 2938)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.3ms | Allocations: 6708)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:24:54 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 17.9ms | Allocations: 6818)
+  Rendered application/_header.html.slim (Duration: 2.9ms | Allocations: 2424)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: 0560a7e8c8fde3acf9e7
+Version: webpack 4.44.2
+Time: 582ms
+Built at: 29.11.2020 00:24:56
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-25b1d31fe42d038d33d1.js    125 KiB  application  [emitted] [immutable]  application
+js/application-25b1d31fe42d038d33d1.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-25b1d31fe42d038d33d1.js js/application-25b1d31fe42d038d33d1.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2189ms (Views: 2185.6ms | ActiveRecord: 0.6ms | Allocations: 18339)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:25:36 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 10.8ms | Allocations: 2937)
+  Rendered application/_header.html.slim (Duration: 0.1ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.7ms | Allocations: 6707)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:25:37 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 6.3ms | Allocations: 2934)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.7ms | ActiveRecord: 0.4ms | Allocations: 6700)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:25:38 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (1.1ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 11.5ms | Allocations: 2934)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.1ms | ActiveRecord: 1.1ms | Allocations: 6704)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:26:31 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 13.1ms | Allocations: 2934)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: b10b3ed11a8bfd11a6ec
+Version: webpack 4.44.2
+Time: 570ms
+Built at: 29.11.2020 00:26:33
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-bd35afbec2ad58aab5ce.js    125 KiB  application  [emitted] [immutable]  application
+js/application-bd35afbec2ad58aab5ce.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-bd35afbec2ad58aab5ce.js js/application-bd35afbec2ad58aab5ce.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2111ms (Views: 2108.4ms | ActiveRecord: 0.7ms | Allocations: 7913)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:26:54 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 5.8ms | Allocations: 2934)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: 12315b352221e7daef64
+Version: webpack 4.44.2
+Time: 590ms
+Built at: 29.11.2020 00:26:56
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-b9311897312c139a0367.js    125 KiB  application  [emitted] [immutable]  application
+js/application-b9311897312c139a0367.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-b9311897312c139a0367.js js/application-b9311897312c139a0367.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2135ms (Views: 2133.3ms | ActiveRecord: 0.4ms | Allocations: 7929)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:28:48 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 12.1ms | Allocations: 7399)
+  Rendered application/_header.html.slim (Duration: 2.7ms | Allocations: 2424)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: 513367c3c4f80d22a738
+Version: webpack 4.44.2
+Time: 606ms
+Built at: 29.11.2020 00:28:50
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-8b003da09cdc0c701298.js    125 KiB  application  [emitted] [immutable]  application
+js/application-8b003da09cdc0c701298.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-8b003da09cdc0c701298.js js/application-8b003da09cdc0c701298.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2192ms (Views: 2190.3ms | ActiveRecord: 0.4ms | Allocations: 18924)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:33:41 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 13.5ms | Allocations: 3202)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: a9ca569f67d9bcf682db
+Version: webpack 4.44.2
+Time: 623ms
+Built at: 29.11.2020 00:33:44
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-755e08814ba0adc4400e.js    126 KiB  application  [emitted] [immutable]  application
+js/application-755e08814ba0adc4400e.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-755e08814ba0adc4400e.js js/application-755e08814ba0adc4400e.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2169ms (Views: 2167.0ms | ActiveRecord: 0.6ms | Allocations: 8189)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:34:09 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 7.3ms | Allocations: 3195)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: c076d550b61eb569079b
+Version: webpack 4.44.2
+Time: 639ms
+Built at: 29.11.2020 00:34:12
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-97bfb0ac4528ca4de899.js    126 KiB  application  [emitted] [immutable]  application
+js/application-97bfb0ac4528ca4de899.js.map    140 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-97bfb0ac4528ca4de899.js js/application-97bfb0ac4528ca4de899.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 4 hidden modules
+
+Completed 200 OK in 2223ms (Views: 2221.5ms | ActiveRecord: 0.4ms | Allocations: 8172)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 00:55:41 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:4
+  Rendered cards/index.html.slim within layouts/cards (Duration: 9.1ms | Allocations: 3269)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: 665f4364585981c0ec2b
+Version: webpack 4.44.2
+Time: 1771ms
+Built at: 29.11.2020 00:55:44
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-e09c2eebe18d535705bc.js    269 KiB  application  [emitted] [immutable]  application
+js/application-e09c2eebe18d535705bc.js.map    263 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-e09c2eebe18d535705bc.js js/application-e09c2eebe18d535705bc.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 129 hidden modules
+
+Completed 200 OK in 3332ms (Views: 3329.8ms | ActiveRecord: 0.7ms | Allocations: 8252)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 01:20:32 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.9ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:8
+  Rendered cards/index.html.slim within layouts/cards (Duration: 15.1ms | Allocations: 8350)
+  Rendered application/_header.html.slim (Duration: 2.2ms | Allocations: 2437)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: 256411061803ab22763c
+Version: webpack 4.44.2
+Time: 1273ms
+Built at: 29.11.2020 01:20:34
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-20fbf8b2edcd941f3f50.js    271 KiB  application  [emitted] [immutable]  application
+js/application-20fbf8b2edcd941f3f50.js.map    264 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-20fbf8b2edcd941f3f50.js js/application-20fbf8b2edcd941f3f50.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 129 hidden modules
+
+Completed 200 OK in 2909ms (Views: 2905.6ms | ActiveRecord: 0.9ms | Allocations: 34883)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 01:20:42 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:8
+  Rendered cards/index.html.slim within layouts/cards (Duration: 8.9ms | Allocations: 3204)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.7ms | Allocations: 6992)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 01:22:07 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:8
+  Rendered cards/index.html.slim within layouts/cards (Duration: 7.9ms | Allocations: 3199)
+  Rendered application/_header.html.slim (Duration: 0.1ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 31.8ms | ActiveRecord: 0.4ms | Allocations: 16173)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 01:22:11 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.6ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:8
+  Rendered cards/index.html.slim within layouts/cards (Duration: 12.7ms | Allocations: 3195)
+  Rendered application/_header.html.slim (Duration: 0.5ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 26.3ms | ActiveRecord: 0.6ms | Allocations: 6971)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 01:24:20 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.4ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:8
+  Rendered cards/index.html.slim within layouts/cards (Duration: 7.7ms | Allocations: 3195)
+  Rendered application/_header.html.slim (Duration: 0.2ms | Allocations: 62)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/anna/programming/studying/ruby/ruby-course/TrelloN/public/packs
+[Webpacker] Hash: 6558853f900492ae773b
+Version: webpack 4.44.2
+Time: 944ms
+Built at: 29.11.2020 01:24:22
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0cb7cfe29541215e27d5.js    271 KiB  application  [emitted] [immutable]  application
+js/application-0cb7cfe29541215e27d5.js.map    264 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0cb7cfe29541215e27d5.js js/application-0cb7cfe29541215e27d5.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 898 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 129 hidden modules
+
+Completed 200 OK in 2484ms (Views: 2482.4ms | ActiveRecord: 0.4ms | Allocations: 8192)
+
+
+Started GET "/cards" for ::1 at 2020-11-29 01:25:46 +0300
+Processing by CardsController#index as HTML
+  Rendering cards/index.html.slim within layouts/cards
+  [1m[36mCard Load (0.7ms)[0m  [1m[34mSELECT "cards".* FROM "cards"[0m
+  ↳ app/views/cards/index.html.slim:8
+  Rendered cards/index.html.slim within layouts/cards (Duration: 14.1ms | Allocations: 3195)
+  Rendered application/_header.html.slim (Duration: 0.1ms | Allocations: 62)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.7ms | Allocations: 17416)
+
+

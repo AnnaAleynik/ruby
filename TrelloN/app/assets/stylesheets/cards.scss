@@ -1,3 +1,12 @@
+
+h2 {
+  .sorter {
+    font-size: 10px;
+    font-weight: normal;
+    cursor: pointer;
+  }
+}
+
 .cards-list {
   display: flex;
   flex-wrap: wrap;
@@ -52,4 +61,8 @@
       width: 20px;
     }
   }
+}
+
+.hidden {
+  display: none;
 }

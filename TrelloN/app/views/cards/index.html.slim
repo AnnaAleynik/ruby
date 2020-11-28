@@ -1,15 +1,18 @@
-/ notice
+.js-cards
+  h2 
+    ' Your cards
+    span.sorter.js-sort-asc Sort by title asc
+    span.sorter.js-sort-desc.hidden Sort by title desc
 
-h2 Your cards
-ul.cards-list
-  -@cards.each do |card|
-    li.cards-list__item
-      .cards-list__header
-        = link_to card.title, card_path(card)
-      .cards-list__icons
-        = link_to edit_card_path(card), class: 'cards-list__icon' do
-          = image_tag 'edit.svg'
-        = link_to card_path(card), method: :delete, data: { confirm: 'Are you sure?' }, class: 'cards-list__icon' do
-          = image_tag 'delete.svg'
+  ul.cards-list.js-cards-list
+    -@cards.each do |card|
+      li.cards-list__item.js-item data-card=card.to_json
+        .cards-list__header
+          = link_to card.title, card_path(card)
+        .cards-list__icons
+          = link_to edit_card_path(card), class: 'cards-list__icon' do
+            = image_tag 'edit.svg'
+          = link_to card_path(card), method: :delete, data: { confirm: 'Are you sure?' }, class: 'cards-list__icon' do
+            = image_tag 'delete.svg'
 
-= link_to 'New card', new_card_path, class: 'button'
+  = link_to 'New card', new_card_path, class: 'button'
