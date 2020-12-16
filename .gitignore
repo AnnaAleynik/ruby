@@ -1,4 +1,3 @@
-test
 d10.12.2020
 tmp
 
@@ -20,4 +19,5 @@ tmp
 .yardoc
 _yardoc
 doc/
+/tdd/test2/*
 
